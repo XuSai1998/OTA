@@ -1,0 +1,132 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.26.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: xu sai, xs, LIC=SDA0P-MS15C-63YMB-2KIZM-J3CTQ-GUM06
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.26.2.0
+Toolchain Path:  E:\software\Keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.26.2.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      CMSIS_AGDI.dll V1.30.6.0
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+E:\learning materials\STM32学习代码\25.OTA远程软件升级\电信云+BC26远程升级的Boot程序\程序部分\4.IAP+BC26+电信云\版本2+RCT6(已完成测试版)\Project\Temperature.uvprojx
+Project File Date:  10/24/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'E:\software\Keil\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_cec.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling system_stm32f10x.c...
+compiling core_cm3.c...
+compiling main.c...
+..\BC26\BC26Connect.h(23): warning:  #1295-D: Deprecated declaration BC26_Connect_Net - give arg types
+  void BC26_Connect_Net();
+..\BC26\BC26Connect.h(26): warning:  #1295-D: Deprecated declaration BC26_Updata_CMD - give arg types
+  FLAG BC26_Updata_CMD();
+..\BC26\BC26Connect.h(27): warning:  #1295-D: Deprecated declaration BC26_Download - give arg types
+  void BC26_Download();
+..\BC26\BC26Connect.h(28): warning:  #1295-D: Deprecated declaration Write_To_Flash - give arg types
+  void Write_To_Flash();
+..\User\main.c(10): warning:  #177-D: variable "Version"  was declared but never referenced
+  	char Version[10],i;
+..\User\main.c(10): warning:  #177-D: variable "i"  was declared but never referenced
+  	char Version[10],i;
+..\User\main.c(11): warning:  #177-D: variable "crc"  was declared but never referenced
+  	char crc[100]="FFFE0113000000110056322E31300000000000000000000000";
+..\User\main.c: 7 warnings, 0 errors
+compiling stm32f10x_it.c...
+compiling delay.c...
+compiling bc26.c...
+compiling BC26Connect.c...
+..\BC26\BC26Connect.h(23): warning:  #1295-D: Deprecated declaration BC26_Connect_Net - give arg types
+  void BC26_Connect_Net();
+..\BC26\BC26Connect.h(26): warning:  #1295-D: Deprecated declaration BC26_Updata_CMD - give arg types
+  FLAG BC26_Updata_CMD();
+..\BC26\BC26Connect.h(27): warning:  #1295-D: Deprecated declaration BC26_Download - give arg types
+  void BC26_Download();
+..\BC26\BC26Connect.h(28): warning:  #1295-D: Deprecated declaration Write_To_Flash - give arg types
+  void Write_To_Flash();
+..\BC26\BC26Connect.c(89): warning:  #167-D: argument of type "volatile char *" is incompatible with parameter of type "u8 *"
+  	BC26_Usart_SendCmd(IMEI);///设置IOT平台注册的IMEI号
+..\BC26\BC26Connect.c(233): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  		BC26_Usart_SendCmd(cmd_len);
+..\BC26\BC26Connect.c(235): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  		BC26_Usart_SendCmd(cmd);
+..\BC26\BC26Connect.c(313): warning:  #940-D: missing return statement at end of non-void function "BC26_Updata_CMD" 
+  }
+..\BC26\BC26Connect.c(358): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  		BC26_Usart_SendCmd(cmd);
+..\BC26\BC26Connect.c(321): warning:  #177-D: variable "j"  was declared but never referenced
+  	int i,j,num=0;
+..\BC26\BC26Connect.c(497): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	iap_write_appbin(FLASH_APP_ADDR,Buffer,Bin_size);//更新FLASH代码   
+..\BC26\BC26Connect.c(519): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  		BC26_Usart_SendCmd(cmd_len);
+..\BC26\BC26Connect.c(521): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  		BC26_Usart_SendCmd(cmd);
+..\BC26\BC26Connect.c(531): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  	Set_Version(Newest_Version);
+..\BC26\BC26Connect.c(466): warning:  #177-D: variable "str"  was declared but never referenced
+  	char *str,cmd[100],len,cmd_len[3],Newest_Version[4];
+..\BC26\BC26Connect.c: 15 warnings, 0 errors
+compiling crc16.c...
+compiling sys.c...
+compiling usart.c...
+compiling iap.c...
+compiling stm32flash.c...
+linking...
+Program Size: Code=9228 RO-data=948 RW-data=84 ZI-data=38316  
+FromELF: creating hex file...
+"..\Output\Temperature.axf" - 0 Error(s), 22 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.1.0.pack
+                Keil.STM32F1xx_DFP.2.1.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  E:\software\Keil\Keil\STM32F1xx_DFP\2.1.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:18
+</pre>
+</body>
+</html>
